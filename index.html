@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>主页</title>
+		<link href="css/head.css" rel="stylesheet"/>
+		<style type="text/css">
+		
+			.img1{
+				width: 1200px;
+				height: 500px;
+				background-image: url(img/index-bg1.jpg);
+			}
+			.data{
+				padding-top:10px ;
+				width: 1200px;
+				height: 580px;
+				background-color: #fff;
+			}
+			.right{
+				width: 400px;
+				height: 400px;
+				margin-right: 80px;
+				margin-top: 20px;
+				float: right;
+				overflow: hidden;
+			
+				
+			}
+			.right img{
+				height: 100%;
+				
+			}
+			.left{
+				width: 500px;
+				height: 400px;
+				margin: 20px 0px 0px 80px;
+				float: left;
+				background-image: url(img/index-a2.jpg);
+				overflow: hidden;
+				background-size: 100% 100%;
+				box-shadow: 10px 10px 5px #888888;    
+			}
+			.u2{
+				width: 250px;
+				float: right;	
+			}
+			.left li{
+				list-style-type: none;
+				width: 230px;
+				line-height: 33px;
+				border-bottom: 2px #ccc dashed;
+			}
+			.u2{
+				float: right;	
+				padding-top:10px ;
+				margin-right: 80px;
+			}
+			.h2{
+				padding: 20px;
+			}
+			.btn{
+				position: fixed;
+				right: 30px;
+				top: 50px;
+			}
+			.btn input{
+				width: 40px;
+				height: 20px;
+				background-color:#ff8726;
+				color: #FFFFFF;
+				border: none;
+			}
+			.top_head a {
+				text-align: center;
+				text-decoration: none;
+				color:#fff;
+				font-weight: 25px;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div id="container">	
+			<div class="top_head">
+				<h2><a href="/liuyong/html/report.html">个人报告</a></h2>
+				
+			</div>
+			<!-- 导航栏 -->
+			<div class="top_nav">
+				<ul>
+					<li id="li_1"><a href="index.html" style="color: #afd95b">网站首页</a></li>
+					<li><a href="html/Experience.html">漫威介绍</a></li>
+					<li><a href="html/ShowCase.html">漫威作品</a></li>
+					<li><a href="html/Login.html" target="_blank">登录</a></li>
+
+					<li><a href="html/Objective.html">技能比拼</a></li>
+					<li><a href="html/Contact.html">联系方式</a></li>
+					
+				</ul>
+			</div>
+			<div id = top_nav1></div>
+			
+			<!-- 主图片 -->
+			<div class="img1">  </div>
+			
+			<!-- 本人资料 -->
+			<div class="data">
+				<h2 class="h2">本人资料</h2>
+				<div class="left">
+					<div class="u2">
+					<ul>
+						<li>姓  名：刘勇</li>
+						<li>性 别：男 </li>
+						<li>名族：汉</li>
+						<li>出生年月：2022年3月</li>
+						<li>籍贯：安徽省</li>
+						<li>所在学院：信息科学与工程学院</li>
+						<li>学历：本科在读</li>
+						<li>所学专业：计算机科学与技术</li>
+						<li>特长：打球、唱歌</li>
+						<li>联系电话：12345678901（伪造）</li>
+						<li>E-mail: 2423439201@qq.com</li>
+					</ul>
+					</div>
+				</div>
+				<div class="right">
+					
+					<img src="img/index-a1.jpg"  />
+				</div>
+			</div>
+			
+		</div>
+		<audio src="audio/bgm.mp3" id="myaudio" controls="controls" loop="false" hidden="true">
+
+    </audio>
+    <div class="btn">
+	    <input type="button" onclick="autoPlay()" value="播放" />
+	    <input type="button" onclick="closePlay()" value="关闭" />
+    </div>
+		<!--页脚-->
+		<footer><center>信息科学与工程学院 2020计算机曙光班 刘勇</center></footer>
+		
+			
+		<!-- 控制音乐播放 -->
+		<script language="javascript" type="text/javascript">
+			document.getElementById("myaudio").play();
+	        function autoPlay() {
+	            var myAuto = document.getElementById('myaudio');
+	            myAuto.play();
+	        }
+	        function closePlay() {
+	            var myAuto = document.getElementById('myaudio');
+	            myAuto.pause();
+	            myAuto.load();
+	        }
+	    </script>
+	</body>
+</html>
